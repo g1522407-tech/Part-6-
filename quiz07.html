@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TOEIC Part 6 練習問題 No.07</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif;max-width:740px;margin:2rem auto;padding:0 1.5rem;color:#2c2c2a;background:#fff;line-height:1.7;font-size:15px}
+a.back{display:inline-block;font-size:13px;color:#185FA5;text-decoration:none;margin-bottom:1.5rem}
+h1{font-size:22px;font-weight:500;margin-bottom:4px}
+.subtitle{font-size:13px;color:#888780;margin-bottom:1.25rem;padding-bottom:1rem;border-bottom:1px solid #e8e7e3}
+.yt-link{display:flex;align-items:center;gap:10px;background:#fff8f8;border:1px solid #fbc8c8;border-radius:8px;padding:.75rem 1rem;margin-bottom:1.5rem;text-decoration:none;color:#2c2c2a;transition:.12s}
+.yt-link:hover{background:#fff0f0;border-color:#f09595}
+.yt-icon{width:32px;height:32px;background:#E24B4A;border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.yt-icon svg{width:16px;height:16px;fill:#fff}
+.yt-text{font-size:13px}
+.yt-text strong{display:block;font-size:14px;font-weight:500;color:#2c2c2a;margin-bottom:2px}
+.yt-text span{color:#888780}
+.score-bar{display:flex;align-items:center;gap:10px;background:#f8f7f4;border:1px solid #e8e7e3;border-radius:8px;padding:10px 1rem;margin-bottom:1.75rem;position:sticky;top:10px;z-index:10}
+.score-num{font-size:20px;font-weight:500;color:#2c2c2a}
+.score-lbl{font-size:13px;color:#888780}
+.pct{font-size:13px;color:#888780;margin-left:auto}
+.section-head{font-size:13px;font-weight:500;color:#fff;background:#444441;border-radius:6px;padding:5px 12px;display:inline-block;margin-bottom:1rem}
+.overview{background:#f0f4ff;border:1px solid #c5d4f5;border-radius:8px;padding:1rem 1.25rem;margin-bottom:1.5rem;font-size:14px;line-height:1.8}
+.overview strong{color:#185FA5}
+.passage{background:#f8f7f4;border:1px solid #d3d1c7;border-radius:8px;padding:1.1rem 1.25rem;font-size:15px;line-height:2.1;margin-bottom:.75rem}
+.vocab-box{background:#fff;border:1px solid #e8e7e3;border-radius:8px;padding:.8rem 1rem;margin-bottom:1.25rem}
+.vocab-title{font-size:11px;font-weight:500;color:#888780;letter-spacing:.07em;text-transform:uppercase;margin-bottom:.5rem}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:3px 16px}
+.vocab-item{font-size:13px;color:#2c2c2a;line-height:1.8}
+.vocab-item b{color:#185FA5;font-weight:500}
+.blank{display:inline-flex;align-items:center;justify-content:center;min-width:30px;height:22px;padding:0 6px;background:#fff;border:1px solid #b4b2a9;border-radius:5px;font-size:12px;font-weight:500;color:#5f5e5a;margin:0 3px;vertical-align:middle;transition:.15s}
+.blank.ok{background:#EAF3DE;border-color:#97C459;color:#3B6D11}
+.blank.ng{background:#FCEBEB;border-color:#F09595;color:#A32D2D}
+.q-block{border:1px solid #e8e7e3;border-radius:8px;padding:1rem 1.25rem;margin-bottom:10px}
+.q-num{font-size:13px;font-weight:500;color:#888780;margin-bottom:6px}
+.q-stem{font-size:14px;color:#2c2c2a;margin-bottom:10px;line-height:1.7;background:#f8f7f4;border-radius:6px;padding:8px 10px;border-left:3px solid #d3d1c7}
+.badge{display:inline-block;font-size:11px;padding:2px 8px;border-radius:5px;margin-left:6px}
+.bw{background:#E6F1FB;color:#185FA5}.bs{background:#EEEDFE;color:#534AB7}.br{background:#EAF3DE;color:#3B6D11}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.opt{padding:8px 10px;text-align:left;background:#f8f7f4;border:1px solid #e8e7e3;border-radius:6px;font-size:13px;color:#2c2c2a;cursor:pointer;line-height:1.5;transition:.12s;width:100%}
+.opt:hover:not(:disabled){background:#fff;border-color:#b4b2a9}
+.opt.ok{background:#EAF3DE;border-color:#97C459;color:#3B6D11;font-weight:500}
+.opt.ng{background:#FCEBEB;border-color:#F09595;color:#A32D2D}
+.opt.reveal{background:#E6F1FB;border-color:#85B7EB;color:#185FA5}
+.opt:disabled{cursor:default}
+.fb{font-size:13px;margin-top:10px;padding:10px 12px;border-radius:6px;background:#f0f9f0;border:1px solid #c0dd97;line-height:1.8}
+.fb.ng-fb{background:#fff5f5;border-color:#f09595}
+.fb-ans{font-weight:500;color:#3B6D11}
+.fb-word{color:#185FA5;font-weight:500}
+hr{border:none;border-top:1px solid #e8e7e3;margin:2rem 0}
+</style>
+</head>
+<body>
+<a class="back" href="index.html">← 問題一覧に戻る</a>
+<h1>👟 TOEIC Part 6 練習問題 No.07</h1>
+<p class="subtitle">テーマ：グローバル展開・DTC戦略・関税リスク管理　|　730点レベル　|　全8問</p>
+
+<a class="yt-link" href="https://youtu.be/NmKWmlkr4Zg" target="_blank">
+  <div class="yt-icon">
+    <svg viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+  </div>
+  <div class="yt-text">
+    <strong>元動画を見る（任意）</strong>
+    <span>ASICS President & COO — Record Earnings & Global Growth Strategy</span>
+  </div>
+</a>
+
+<div class="score-bar">
+  <span class="score-lbl">スコア</span>
+  <span class="score-num" id="score">0 / 8</span>
+  <span class="pct" id="pct">0 / 8 問回答済み</span>
+</div>
+
+<div class="overview">
+<strong>📌 パッセージ概要</strong>（動画を見なくても解答できます）<br>
+ASICSのCOOが過去最高決算、米国関税への対応、グローバル成長戦略について語っています。
+</div>
+
+<p class="section-head">📝 Part A　穴埋め問題（問1〜5）</p>
+
+<div class="passage" id="pb0">
+A Japanese sportswear company recently reported record earnings, achieving its annual financial targets one year <span class="blank" id="bl-0">1</span> of schedule. The company raised its full-year guidance, projecting a 20% increase in sales and a 30% rise in operating income. Despite facing higher US tariffs on products manufactured in Southeast Asia, the company decided to <span class="blank" id="bl-1">2</span> the increased costs internally rather than raising prices, in order to maintain strong relationships with wholesale partners. The executive highlighted three key <span class="blank" id="bl-2">3</span> of growth: global expansion into emerging markets such as India and the Middle East, investment in digital infrastructure and direct-to-consumer channels, and continued product innovation leveraging Japanese craftsmanship. With approximately 80% of revenue generated <span class="blank" id="bl-3">4</span> Japan, the company is well-positioned for further international expansion. The executive expressed confidence that strong brand <span class="blank" id="bl-4">5</span> and athlete partnerships will drive continued growth despite macroeconomic headwinds.
+</div>
+
+<div class="vocab-box">
+  <div class="vocab-title">📖 語注 Vocabulary</div>
+  <div class="vocab-grid">
+<div class="vocab-item"><b>operating income</b>：営業利益</div>
+<div class="vocab-item"><b>tariff</b>：関税</div>
+<div class="vocab-item"><b>wholesaler</b>：卸売業者</div>
+<div class="vocab-item"><b>direct-to-consumer (DTC)</b>：消費者直販モデル</div>
+<div class="vocab-item"><b>craftsmanship</b>：職人技・ものづくりの技術</div>
+<div class="vocab-item"><b>emerging market</b>：新興市場</div>
+<div class="vocab-item"><b>capex</b>：設備投資（資本的支出）</div>
+<div class="vocab-item"><b>market share</b>：市場シェア</div>
+  </div>
+</div>
+
+<div class="q-block" id="qb0">
+  <div class="q-num">問 1 <span class="badge bw">語彙</span></div>
+  <div class="q-stem">...achieving its annual financial targets one year _______ of schedule.</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(0,'A')">A. behind</button>
+    <button class="opt" onclick="pick(0,'B')">B. ahead</button>
+    <button class="opt" onclick="pick(0,'C')">C. outside</button>
+    <button class="opt" onclick="pick(0,'D')">D. short</button>
+  </div>
+</div>
+<div class="q-block" id="qb1">
+  <div class="q-num">問 2 <span class="badge bw">語彙</span></div>
+  <div class="q-stem">...the company decided to _______ the increased costs internally rather than raising prices...</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(1,'A')">A. ignore</button>
+    <button class="opt" onclick="pick(1,'B')">B. transfer</button>
+    <button class="opt" onclick="pick(1,'C')">C. absorb</button>
+    <button class="opt" onclick="pick(1,'D')">D. eliminate</button>
+  </div>
+</div>
+<div class="q-block" id="qb2">
+  <div class="q-num">問 3 <span class="badge bw">語彙</span></div>
+  <div class="q-stem">The executive highlighted three key _______ of growth...</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(2,'A')">A. obstacles</button>
+    <button class="opt" onclick="pick(2,'B')">B. drivers</button>
+    <button class="opt" onclick="pick(2,'C')">C. failures</button>
+    <button class="opt" onclick="pick(2,'D')">D. restrictions</button>
+  </div>
+</div>
+<div class="q-block" id="qb3">
+  <div class="q-num">問 4 <span class="badge bw">語彙</span></div>
+  <div class="q-stem">With approximately 80% of revenue generated _______ Japan...</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(3,'A')">A. inside</button>
+    <button class="opt" onclick="pick(3,'B')">B. against</button>
+    <button class="opt" onclick="pick(3,'C')">C. outside</button>
+    <button class="opt" onclick="pick(3,'D')">D. despite</button>
+  </div>
+</div>
+<div class="q-block" id="qb4">
+  <div class="q-num">問 5 <span class="badge bw">語彙</span></div>
+  <div class="q-stem">...strong brand _______ and athlete partnerships will drive continued growth...</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(4,'A')">A. recognition</button>
+    <button class="opt" onclick="pick(4,'B')">B. confusion</button>
+    <button class="opt" onclick="pick(4,'C')">C. restriction</button>
+    <button class="opt" onclick="pick(4,'D')">D. withdrawal</button>
+  </div>
+</div>
+
+
+<hr>
+
+<p class="section-head">📋 Part B　要約問題（問6〜8）</p>
+
+<div class="q-block" id="qb5">
+  <div class="q-num">問 6 <span class="badge br">要約</span></div>
+  <div class="q-stem">Why did the company choose not to raise prices despite higher tariffs?</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(5,'A')">A. Government regulations prohibited price increases.</button>
+    <button class="opt" onclick="pick(5,'B')">B. Competitors had already lowered their prices significantly.</button>
+    <button class="opt" onclick="pick(5,'C')">C. Maintaining relationships with wholesale partners was considered more important.</button>
+    <button class="opt" onclick="pick(5,'D')">D. The company expected tariffs to be removed within a few months.</button>
+  </div>
+</div>
+<div class="q-block" id="qb6">
+  <div class="q-num">問 7 <span class="badge br">要約</span></div>
+  <div class="q-stem">Which of the following BEST describes the company's digital strategy?</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(6,'A')">A. Replacing all wholesale channels with online-only sales.</button>
+    <button class="opt" onclick="pick(6,'B')">B. Investing in direct-to-consumer channels and apps to better understand customer behavior.</button>
+    <button class="opt" onclick="pick(6,'C')">C. Partnering with social media platforms to advertise products exclusively online.</button>
+    <button class="opt" onclick="pick(6,'D')">D. Reducing investment in physical retail stores to cut operating costs.</button>
+  </div>
+</div>
+<div class="q-block" id="qb7">
+  <div class="q-num">問 8 <span class="badge br">要約</span></div>
+  <div class="q-stem">What growth rate does the executive project for the company going forward?</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(7,'A')">A. 5 to 10% annual growth in sales.</button>
+    <button class="opt" onclick="pick(7,'B')">B. 30% annual growth driven entirely by the US market.</button>
+    <button class="opt" onclick="pick(7,'C')">C. 15 to 20% annual growth in sales.</button>
+    <button class="opt" onclick="pick(7,'D')">D. 50% annual growth focused on Asian emerging markets only.</button>
+  </div>
+</div>
+
+
+<script>
+const answers=[{"correct": "B", "blank": 0, "word": "ahead", "meaning": "前倒しで・先んじて", "exp": "「one year ahead of schedule（計画より1年前倒し）」は業績の良さを示す定番表現。"}, {"correct": "C", "blank": 1, "word": "absorb", "meaning": "（コストを）吸収する", "exp": "「absorb costs（コストを吸収する）」はビジネス英語の定番。価格に転嫁しないという意思決定。"}, {"correct": "B", "blank": 2, "word": "drivers", "meaning": "成長ドライバー・原動力", "exp": "「key drivers of growth（成長の主要原動力）」は決算会見・戦略会議の頻出表現。"}, {"correct": "C", "blank": 3, "word": "outside", "meaning": "〜の外で・海外で", "exp": "「outside Japan（日本国外）」。売上の80%が海外という意味。"}, {"correct": "A", "blank": 4, "word": "recognition", "meaning": "認知度・ブランド力", "exp": "「brand recognition（ブランド認知度）」はマーケティングの必須語。"}, {"correct": "C", "blank": null, "word": null, "meaning": null, "exp": "「卸売パートナー、特にランニング専門店との戦略的関係を維持することが重要」と述べています。"}, {"correct": "B", "blank": null, "word": null, "meaning": null, "exp": "DTC・レース登録アプリへの投資で「消費者をより深く理解する」タッチポイント拡大が目的。"}, {"correct": "C", "blank": null, "word": null, "meaning": null, "exp": "「15〜20%の売上成長」を新中期計画でも目指すと明言しています。"}];
+let score=0,answered={};
+function pick(idx,chosen){
+  if(answered[idx]!==undefined)return;
+  answered[idx]=true;
+  const a=answers[idx];
+  const isOk=chosen===a.correct;
+  if(isOk)score++;
+  const block=document.getElementById("qb"+idx);
+  block.querySelectorAll(".opt").forEach((b,i)=>{
+    b.disabled=true;
+    const letter=String.fromCharCode(65+i);
+    if(letter===a.correct)b.className="opt "+(letter===chosen?"ok":"reveal");
+    else if(letter===chosen)b.className="opt ng";
+  });
+  if(a.blank!==null){const bl=document.getElementById("bl-"+a.blank);if(bl)bl.className="blank "+(isOk?"ok":"ng");}
+  const fb=document.createElement("div");
+  fb.className="fb"+(isOk?"":" ng-fb");
+  const wordPart=a.word?"<span class='fb-word'>"+a.word+"</span>（"+a.meaning+"）　":"";
+  fb.innerHTML=(isOk?"✅":"❌")+" <span class='fb-ans'>正解：("+a.correct+")</span>　"+wordPart+a.exp;
+  block.appendChild(fb);
+  const total=answers.length,done=Object.keys(answered).length;
+  document.getElementById("score").textContent=score+" / "+total;
+  document.getElementById("pct").textContent=done===total?"完了！　正答率 "+Math.round(score/total*100)+"%":done+"/"+total+" 問回答済み";
+}
+</script>
+</body>
+</html>

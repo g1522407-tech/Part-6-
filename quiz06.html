@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TOEIC Part 6 練習問題 No.06</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif;max-width:740px;margin:2rem auto;padding:0 1.5rem;color:#2c2c2a;background:#fff;line-height:1.7;font-size:15px}
+a.back{display:inline-block;font-size:13px;color:#185FA5;text-decoration:none;margin-bottom:1.5rem}
+h1{font-size:22px;font-weight:500;margin-bottom:4px}
+.subtitle{font-size:13px;color:#888780;margin-bottom:1.25rem;padding-bottom:1rem;border-bottom:1px solid #e8e7e3}
+.yt-link{display:flex;align-items:center;gap:10px;background:#fff8f8;border:1px solid #fbc8c8;border-radius:8px;padding:.75rem 1rem;margin-bottom:1.5rem;text-decoration:none;color:#2c2c2a;transition:.12s}
+.yt-link:hover{background:#fff0f0;border-color:#f09595}
+.yt-icon{width:32px;height:32px;background:#E24B4A;border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.yt-icon svg{width:16px;height:16px;fill:#fff}
+.yt-text{font-size:13px}
+.yt-text strong{display:block;font-size:14px;font-weight:500;color:#2c2c2a;margin-bottom:2px}
+.yt-text span{color:#888780}
+.score-bar{display:flex;align-items:center;gap:10px;background:#f8f7f4;border:1px solid #e8e7e3;border-radius:8px;padding:10px 1rem;margin-bottom:1.75rem;position:sticky;top:10px;z-index:10}
+.score-num{font-size:20px;font-weight:500;color:#2c2c2a}
+.score-lbl{font-size:13px;color:#888780}
+.pct{font-size:13px;color:#888780;margin-left:auto}
+.section-head{font-size:13px;font-weight:500;color:#fff;background:#444441;border-radius:6px;padding:5px 12px;display:inline-block;margin-bottom:1rem}
+.overview{background:#f0f4ff;border:1px solid #c5d4f5;border-radius:8px;padding:1rem 1.25rem;margin-bottom:1.5rem;font-size:14px;line-height:1.8}
+.overview strong{color:#185FA5}
+.passage{background:#f8f7f4;border:1px solid #d3d1c7;border-radius:8px;padding:1.1rem 1.25rem;font-size:15px;line-height:2.1;margin-bottom:.75rem}
+.vocab-box{background:#fff;border:1px solid #e8e7e3;border-radius:8px;padding:.8rem 1rem;margin-bottom:1.25rem}
+.vocab-title{font-size:11px;font-weight:500;color:#888780;letter-spacing:.07em;text-transform:uppercase;margin-bottom:.5rem}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:3px 16px}
+.vocab-item{font-size:13px;color:#2c2c2a;line-height:1.8}
+.vocab-item b{color:#185FA5;font-weight:500}
+.blank{display:inline-flex;align-items:center;justify-content:center;min-width:30px;height:22px;padding:0 6px;background:#fff;border:1px solid #b4b2a9;border-radius:5px;font-size:12px;font-weight:500;color:#5f5e5a;margin:0 3px;vertical-align:middle;transition:.15s}
+.blank.ok{background:#EAF3DE;border-color:#97C459;color:#3B6D11}
+.blank.ng{background:#FCEBEB;border-color:#F09595;color:#A32D2D}
+.q-block{border:1px solid #e8e7e3;border-radius:8px;padding:1rem 1.25rem;margin-bottom:10px}
+.q-num{font-size:13px;font-weight:500;color:#888780;margin-bottom:6px}
+.q-stem{font-size:14px;color:#2c2c2a;margin-bottom:10px;line-height:1.7;background:#f8f7f4;border-radius:6px;padding:8px 10px;border-left:3px solid #d3d1c7}
+.badge{display:inline-block;font-size:11px;padding:2px 8px;border-radius:5px;margin-left:6px}
+.bw{background:#E6F1FB;color:#185FA5}.bs{background:#EEEDFE;color:#534AB7}.br{background:#EAF3DE;color:#3B6D11}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.opt{padding:8px 10px;text-align:left;background:#f8f7f4;border:1px solid #e8e7e3;border-radius:6px;font-size:13px;color:#2c2c2a;cursor:pointer;line-height:1.5;transition:.12s;width:100%}
+.opt:hover:not(:disabled){background:#fff;border-color:#b4b2a9}
+.opt.ok{background:#EAF3DE;border-color:#97C459;color:#3B6D11;font-weight:500}
+.opt.ng{background:#FCEBEB;border-color:#F09595;color:#A32D2D}
+.opt.reveal{background:#E6F1FB;border-color:#85B7EB;color:#185FA5}
+.opt:disabled{cursor:default}
+.fb{font-size:13px;margin-top:10px;padding:10px 12px;border-radius:6px;background:#f0f9f0;border:1px solid #c0dd97;line-height:1.8}
+.fb.ng-fb{background:#fff5f5;border-color:#f09595}
+.fb-ans{font-weight:500;color:#3B6D11}
+.fb-word{color:#185FA5;font-weight:500}
+hr{border:none;border-top:1px solid #e8e7e3;margin:2rem 0}
+</style>
+</head>
+<body>
+<a class="back" href="index.html">← 問題一覧に戻る</a>
+<h1>🛡️ TOEIC Part 6 練習問題 No.06</h1>
+<p class="subtitle">テーマ：日米同盟・防衛力強化・地域安全保障　|　730点レベル　|　全8問</p>
+
+<a class="yt-link" href="https://youtu.be/sLxmH2xzlVI" target="_blank">
+  <div class="yt-icon">
+    <svg viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+  </div>
+  <div class="yt-text">
+    <strong>元動画を見る（任意）</strong>
+    <span>Japan Defense Minister — Security Policy & US-Japan Alliance Interview</span>
+  </div>
+</a>
+
+<div class="score-bar">
+  <span class="score-lbl">スコア</span>
+  <span class="score-num" id="score">0 / 8</span>
+  <span class="pct" id="pct">0 / 8 問回答済み</span>
+</div>
+
+<div class="overview">
+<strong>📌 パッセージ概要</strong>（動画を見なくても解答できます）<br>
+日本の防衛大臣がミュンヘン安全保障会議で、日中関係・日米同盟・防衛政策強化について語っています。
+</div>
+
+<p class="section-head">📝 Part A　穴埋め問題（問1〜5）</p>
+
+<div class="passage" id="pb0">
+At an international security conference, Japan's defense minister emphasized that despite differences with China, Japan remains <span class="blank" id="bl-0">1</span> to dialogue and will not close any communication channels. On the topic of the US-Japan alliance, the minister described it as <span class="blank" id="bl-1">2</span>, dismissing concerns about its credibility. The minister also noted that security in the Indo-Pacific and Euro-Atlantic regions is <span class="blank" id="bl-2">3</span>, citing the deployment of North Korean troops to support Russian operations in Ukraine as evidence of this interconnectedness. Japan is actively working to <span class="blank" id="bl-3">4</span> its own defense capabilities, including participation in a new international fighter jet program with Italy and the United Kingdom. The minister stressed that Japan must develop its own approach to modern <span class="blank" id="bl-4">5</span>, including drone warfare, cyber operations, and artificial intelligence, rather than simply copying strategies observed in other conflicts.
+</div>
+
+<div class="vocab-box">
+  <div class="vocab-title">📖 語注 Vocabulary</div>
+  <div class="vocab-grid">
+<div class="vocab-item"><b>dialogue</b>：対話・意見交換</div>
+<div class="vocab-item"><b>alliance</b>：同盟</div>
+<div class="vocab-item"><b>unwavering</b>：揺るぎない・確固たる</div>
+<div class="vocab-item"><b>credibility</b>：信頼性</div>
+<div class="vocab-item"><b>inseparable</b>：不可分の・切り離せない</div>
+<div class="vocab-item"><b>deterrence</b>：抑止力</div>
+<div class="vocab-item"><b>interoperability</b>：相互運用性</div>
+<div class="vocab-item"><b>sovereignty</b>：主権</div>
+  </div>
+</div>
+
+<div class="q-block" id="qb0">
+  <div class="q-num">問 1 <span class="badge bw">語彙</span></div>
+  <div class="q-stem">...Japan remains _______ to dialogue and will not close any communication channels.</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(0,'A')">A. opposed</button>
+    <button class="opt" onclick="pick(0,'B')">B. committed</button>
+    <button class="opt" onclick="pick(0,'C')">C. indifferent</button>
+    <button class="opt" onclick="pick(0,'D')">D. restricted</button>
+  </div>
+</div>
+<div class="q-block" id="qb1">
+  <div class="q-num">問 2 <span class="badge bw">語彙</span></div>
+  <div class="q-stem">...the minister described it as _______, dismissing concerns about its credibility.</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(1,'A')">A. outdated</button>
+    <button class="opt" onclick="pick(1,'B')">B. temporary</button>
+    <button class="opt" onclick="pick(1,'C')">C. unwavering</button>
+    <button class="opt" onclick="pick(1,'D')">D. conditional</button>
+  </div>
+</div>
+<div class="q-block" id="qb2">
+  <div class="q-num">問 3 <span class="badge bw">語彙</span></div>
+  <div class="q-stem">...security in the Indo-Pacific and Euro-Atlantic regions is _______...</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(2,'A')">A. deteriorating</button>
+    <button class="opt" onclick="pick(2,'B')">B. irrelevant</button>
+    <button class="opt" onclick="pick(2,'C')">C. inseparable</button>
+    <button class="opt" onclick="pick(2,'D')">D. isolated</button>
+  </div>
+</div>
+<div class="q-block" id="qb3">
+  <div class="q-num">問 4 <span class="badge bw">語彙</span></div>
+  <div class="q-stem">Japan is actively working to _______ its own defense capabilities...</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(3,'A')">A. reduce</button>
+    <button class="opt" onclick="pick(3,'B')">B. transfer</button>
+    <button class="opt" onclick="pick(3,'C')">C. strengthen</button>
+    <button class="opt" onclick="pick(3,'D')">D. outsource</button>
+  </div>
+</div>
+<div class="q-block" id="qb4">
+  <div class="q-num">問 5 <span class="badge bw">語彙</span></div>
+  <div class="q-stem">...Japan must develop its own approach to modern _______...</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(4,'A')">A. diplomacy</button>
+    <button class="opt" onclick="pick(4,'B')">B. trade</button>
+    <button class="opt" onclick="pick(4,'C')">C. agriculture</button>
+    <button class="opt" onclick="pick(4,'D')">D. warfare</button>
+  </div>
+</div>
+
+
+<hr>
+
+<p class="section-head">📋 Part B　要約問題（問6〜8）</p>
+
+<div class="q-block" id="qb5">
+  <div class="q-num">問 6 <span class="badge br">要約</span></div>
+  <div class="q-stem">What is Japan's stated position on communication with China despite ongoing tensions?</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(5,'A')">A. Japan has severed all diplomatic ties with China.</button>
+    <button class="opt" onclick="pick(5,'B')">B. Japan will only engage in dialogue through multilateral forums.</button>
+    <button class="opt" onclick="pick(5,'C')">C. Japan remains open to dialogue regardless of differences.</button>
+    <button class="opt" onclick="pick(5,'D')">D. Japan has requested China to reduce its military presence first.</button>
+  </div>
+</div>
+<div class="q-block" id="qb6">
+  <div class="q-num">問 7 <span class="badge br">要約</span></div>
+  <div class="q-stem">Why does the minister argue that the Ukraine conflict is relevant to Japan's security?</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(6,'A')">A. Japan is directly supplying weapons to Ukraine.</button>
+    <button class="opt" onclick="pick(6,'B')">B. North Korean troops are gaining battlefield experience that could affect Northeast Asia.</button>
+    <button class="opt" onclick="pick(6,'C')">C. The conflict has disrupted Japan's energy supply from Europe.</button>
+    <button class="opt" onclick="pick(6,'D')">D. NATO has asked Japan to send troops to Eastern Europe.</button>
+  </div>
+</div>
+<div class="q-block" id="qb7">
+  <div class="q-num">問 8 <span class="badge br">要約</span></div>
+  <div class="q-stem">What does the passage suggest about Japan's approach to developing new defense strategies?</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(7,'A')">A. Japan will copy proven tactics from the Ukraine-Russia conflict directly.</button>
+    <button class="opt" onclick="pick(7,'B')">B. Japan will rely entirely on US military strategy for its defense.</button>
+    <button class="opt" onclick="pick(7,'C')">C. Japan will develop its own approach suited to its unique geographic and political situation.</button>
+    <button class="opt" onclick="pick(7,'D')">D. Japan plans to reduce defense spending in favor of economic investment.</button>
+  </div>
+</div>
+
+
+<script>
+const answers=[{"correct": "B", "blank": 0, "word": "committed", "meaning": "取り組んでいる・開かれている", "exp": "「be committed to dialogue（対話に取り組む）」。opposed（反対）は逆。"}, {"correct": "C", "blank": 1, "word": "unwavering", "meaning": "揺るぎない・不変の", "exp": "「unwavering（揺るぎない）」は同盟の強固さを表す定番の外交用語。"}, {"correct": "C", "blank": 2, "word": "inseparable", "meaning": "不可分の", "exp": "「Indo-Pacific and Euro-Atlantic is inseparable」は大臣の核心メッセージ。"}, {"correct": "C", "blank": 3, "word": "strengthen", "meaning": "強化する", "exp": "「strengthen defense capabilities（防衛力を強化する）」は安全保障の定番表現。"}, {"correct": "D", "blank": 4, "word": "warfare", "meaning": "戦闘・戦争の様態", "exp": "ドローン・サイバー・AIを含む「現代の戦闘様態」への対応を指す。"}, {"correct": "C", "blank": null, "word": null, "meaning": null, "exp": "大臣は「違いがあっても対話のチャンネルを閉じない」と明言。対話継続が日本の立場。"}, {"correct": "B", "blank": null, "word": null, "meaning": null, "exp": "北朝鮮兵士がロシアで新型戦闘技術を習得し帰国する→日本への脅威につながるという論理。"}, {"correct": "C", "blank": null, "word": null, "meaning": null, "exp": "「日本は島国なので他国の戦闘様態をコピーせず、自国に合った方法を見つける」と述べています。"}];
+let score=0,answered={};
+function pick(idx,chosen){
+  if(answered[idx]!==undefined)return;
+  answered[idx]=true;
+  const a=answers[idx];
+  const isOk=chosen===a.correct;
+  if(isOk)score++;
+  const block=document.getElementById("qb"+idx);
+  block.querySelectorAll(".opt").forEach((b,i)=>{
+    b.disabled=true;
+    const letter=String.fromCharCode(65+i);
+    if(letter===a.correct)b.className="opt "+(letter===chosen?"ok":"reveal");
+    else if(letter===chosen)b.className="opt ng";
+  });
+  if(a.blank!==null){const bl=document.getElementById("bl-"+a.blank);if(bl)bl.className="blank "+(isOk?"ok":"ng");}
+  const fb=document.createElement("div");
+  fb.className="fb"+(isOk?"":" ng-fb");
+  const wordPart=a.word?"<span class='fb-word'>"+a.word+"</span>（"+a.meaning+"）　":"";
+  fb.innerHTML=(isOk?"✅":"❌")+" <span class='fb-ans'>正解：("+a.correct+")</span>　"+wordPart+a.exp;
+  block.appendChild(fb);
+  const total=answers.length,done=Object.keys(answered).length;
+  document.getElementById("score").textContent=score+" / "+total;
+  document.getElementById("pct").textContent=done===total?"完了！　正答率 "+Math.round(score/total*100)+"%":done+"/"+total+" 問回答済み";
+}
+</script>
+</body>
+</html>

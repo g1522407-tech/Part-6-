@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TOEIC Part 6 練習問題 No.08</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif;max-width:740px;margin:2rem auto;padding:0 1.5rem;color:#2c2c2a;background:#fff;line-height:1.7;font-size:15px}
+a.back{display:inline-block;font-size:13px;color:#185FA5;text-decoration:none;margin-bottom:1.5rem}
+h1{font-size:22px;font-weight:500;margin-bottom:4px}
+.subtitle{font-size:13px;color:#888780;margin-bottom:1.25rem;padding-bottom:1rem;border-bottom:1px solid #e8e7e3}
+.yt-link{display:flex;align-items:center;gap:10px;background:#fff8f8;border:1px solid #fbc8c8;border-radius:8px;padding:.75rem 1rem;margin-bottom:1.5rem;text-decoration:none;color:#2c2c2a;transition:.12s}
+.yt-link:hover{background:#fff0f0;border-color:#f09595}
+.yt-icon{width:32px;height:32px;background:#E24B4A;border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.yt-icon svg{width:16px;height:16px;fill:#fff}
+.yt-text{font-size:13px}
+.yt-text strong{display:block;font-size:14px;font-weight:500;color:#2c2c2a;margin-bottom:2px}
+.yt-text span{color:#888780}
+.score-bar{display:flex;align-items:center;gap:10px;background:#f8f7f4;border:1px solid #e8e7e3;border-radius:8px;padding:10px 1rem;margin-bottom:1.75rem;position:sticky;top:10px;z-index:10}
+.score-num{font-size:20px;font-weight:500;color:#2c2c2a}
+.score-lbl{font-size:13px;color:#888780}
+.pct{font-size:13px;color:#888780;margin-left:auto}
+.section-head{font-size:13px;font-weight:500;color:#fff;background:#444441;border-radius:6px;padding:5px 12px;display:inline-block;margin-bottom:1rem}
+.overview{background:#f0f4ff;border:1px solid #c5d4f5;border-radius:8px;padding:1rem 1.25rem;margin-bottom:1.5rem;font-size:14px;line-height:1.8}
+.overview strong{color:#185FA5}
+.passage{background:#f8f7f4;border:1px solid #d3d1c7;border-radius:8px;padding:1.1rem 1.25rem;font-size:15px;line-height:2.1;margin-bottom:.75rem}
+.vocab-box{background:#fff;border:1px solid #e8e7e3;border-radius:8px;padding:.8rem 1rem;margin-bottom:1.25rem}
+.vocab-title{font-size:11px;font-weight:500;color:#888780;letter-spacing:.07em;text-transform:uppercase;margin-bottom:.5rem}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:3px 16px}
+.vocab-item{font-size:13px;color:#2c2c2a;line-height:1.8}
+.vocab-item b{color:#185FA5;font-weight:500}
+.blank{display:inline-flex;align-items:center;justify-content:center;min-width:30px;height:22px;padding:0 6px;background:#fff;border:1px solid #b4b2a9;border-radius:5px;font-size:12px;font-weight:500;color:#5f5e5a;margin:0 3px;vertical-align:middle;transition:.15s}
+.blank.ok{background:#EAF3DE;border-color:#97C459;color:#3B6D11}
+.blank.ng{background:#FCEBEB;border-color:#F09595;color:#A32D2D}
+.q-block{border:1px solid #e8e7e3;border-radius:8px;padding:1rem 1.25rem;margin-bottom:10px}
+.q-num{font-size:13px;font-weight:500;color:#888780;margin-bottom:6px}
+.q-stem{font-size:14px;color:#2c2c2a;margin-bottom:10px;line-height:1.7;background:#f8f7f4;border-radius:6px;padding:8px 10px;border-left:3px solid #d3d1c7}
+.badge{display:inline-block;font-size:11px;padding:2px 8px;border-radius:5px;margin-left:6px}
+.bw{background:#E6F1FB;color:#185FA5}.bs{background:#EEEDFE;color:#534AB7}.br{background:#EAF3DE;color:#3B6D11}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.opt{padding:8px 10px;text-align:left;background:#f8f7f4;border:1px solid #e8e7e3;border-radius:6px;font-size:13px;color:#2c2c2a;cursor:pointer;line-height:1.5;transition:.12s;width:100%}
+.opt:hover:not(:disabled){background:#fff;border-color:#b4b2a9}
+.opt.ok{background:#EAF3DE;border-color:#97C459;color:#3B6D11;font-weight:500}
+.opt.ng{background:#FCEBEB;border-color:#F09595;color:#A32D2D}
+.opt.reveal{background:#E6F1FB;border-color:#85B7EB;color:#185FA5}
+.opt:disabled{cursor:default}
+.fb{font-size:13px;margin-top:10px;padding:10px 12px;border-radius:6px;background:#f0f9f0;border:1px solid #c0dd97;line-height:1.8}
+.fb.ng-fb{background:#fff5f5;border-color:#f09595}
+.fb-ans{font-weight:500;color:#3B6D11}
+.fb-word{color:#185FA5;font-weight:500}
+hr{border:none;border-top:1px solid #e8e7e3;margin:2rem 0}
+</style>
+</head>
+<body>
+<a class="back" href="index.html">← 問題一覧に戻る</a>
+<h1>🚗 TOEIC Part 6 練習問題 No.08</h1>
+<p class="subtitle">テーマ：経営哲学・キャリア形成・変革へのマインドセット　|　730点レベル　|　全8問</p>
+
+<a class="yt-link" href="https://youtu.be/yMI8N9dfVtA" target="_blank">
+  <div class="yt-icon">
+    <svg viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+  </div>
+  <div class="yt-text">
+    <strong>元動画を見る（任意）</strong>
+    <span>Akio Toyoda — Babson College Commencement Speech</span>
+  </div>
+</a>
+
+<div class="score-bar">
+  <span class="score-lbl">スコア</span>
+  <span class="score-num" id="score">0 / 8</span>
+  <span class="pct" id="pct">0 / 8 問回答済み</span>
+</div>
+
+<div class="overview">
+<strong>📌 パッセージ概要</strong>（動画を見なくても解答できます）<br>
+トヨタ自動車の豊田章男会長がバブソン大学の卒業式スピーチで、起業家精神・変革・価値観について語っています。
+</div>
+
+<p class="section-head">📝 Part A　穴埋め問題（問1〜5）</p>
+
+<div class="passage" id="pb0">
+In a commencement address at a leading business school, a CEO of a global automaker encouraged graduates to prioritize finding work that brings them genuine <span class="blank" id="bl-0">1</span> rather than simply pursuing financial success. The speaker reflected on his own education, noting that the school had <span class="blank" id="bl-1">2</span> a sense of entrepreneurship in him that he applies even in running a large corporation. He emphasized the importance of <span class="blank" id="bl-2">3</span> change rather than resisting it, pointing to his own company's transformation from a textile manufacturer to one of the world's leading automakers as evidence that radical reinvention is possible. The CEO also stressed that successful leaders must <span class="blank" id="bl-3">4</span> learning new skills throughout their careers, regardless of age or seniority. Finally, he urged graduates to develop a clear set of personal values to serve as a <span class="blank" id="bl-4">5</span>, helping them make principled decisions and contribute positively to the world.
+</div>
+
+<div class="vocab-box">
+  <div class="vocab-title">📖 語注 Vocabulary</div>
+  <div class="vocab-grid">
+<div class="vocab-item"><b>commencement</b>：卒業式</div>
+<div class="vocab-item"><b>entrepreneurship</b>：起業家精神</div>
+<div class="vocab-item"><b>reinvention</b>：抜本的な変革・再発明</div>
+<div class="vocab-item"><b>instill</b>：植え付ける・身につけさせる</div>
+<div class="vocab-item"><b>sentimental</b>：感情的な・センチメンタルな</div>
+<div class="vocab-item"><b>guiding light</b>：導く光・指針</div>
+<div class="vocab-item"><b>humility</b>：謙虚さ</div>
+<div class="vocab-item"><b>integrity</b>：誠実さ・高潔さ</div>
+  </div>
+</div>
+
+<div class="q-block" id="qb0">
+  <div class="q-num">問 1 <span class="badge bw">語彙</span></div>
+  <div class="q-stem">...encouraged graduates to prioritize finding work that brings them genuine _______...</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(0,'A')">A. wealth</button>
+    <button class="opt" onclick="pick(0,'B')">B. fame</button>
+    <button class="opt" onclick="pick(0,'C')">C. joy</button>
+    <button class="opt" onclick="pick(0,'D')">D. power</button>
+  </div>
+</div>
+<div class="q-block" id="qb1">
+  <div class="q-num">問 2 <span class="badge bw">語彙</span></div>
+  <div class="q-stem">...the school had _______ a sense of entrepreneurship in him...</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(1,'A')">A. removed</button>
+    <button class="opt" onclick="pick(1,'B')">B. instilled</button>
+    <button class="opt" onclick="pick(1,'C')">C. questioned</button>
+    <button class="opt" onclick="pick(1,'D')">D. replaced</button>
+  </div>
+</div>
+<div class="q-block" id="qb2">
+  <div class="q-num">問 3 <span class="badge bw">語彙</span></div>
+  <div class="q-stem">He emphasized the importance of _______ change rather than resisting it...</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(2,'A')">A. avoiding</button>
+    <button class="opt" onclick="pick(2,'B')">B. delaying</button>
+    <button class="opt" onclick="pick(2,'C')">C. embracing</button>
+    <button class="opt" onclick="pick(2,'D')">D. reporting</button>
+  </div>
+</div>
+<div class="q-block" id="qb3">
+  <div class="q-num">問 4 <span class="badge bw">語彙</span></div>
+  <div class="q-stem">...successful leaders must _______ learning new skills throughout their careers...</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(3,'A')">A. avoid</button>
+    <button class="opt" onclick="pick(3,'B')">B. never stop</button>
+    <button class="opt" onclick="pick(3,'C')">C. limit</button>
+    <button class="opt" onclick="pick(3,'D')">D. delegate</button>
+  </div>
+</div>
+<div class="q-block" id="qb4">
+  <div class="q-num">問 5 <span class="badge bw">語彙</span></div>
+  <div class="q-stem">...develop a clear set of personal values to serve as a _______...</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(4,'A')">A. barrier</button>
+    <button class="opt" onclick="pick(4,'B')">B. shortcut</button>
+    <button class="opt" onclick="pick(4,'C')">C. guiding light</button>
+    <button class="opt" onclick="pick(4,'D')">D. compromise</button>
+  </div>
+</div>
+
+
+<hr>
+
+<p class="section-head">📋 Part B　要約問題（問6〜8）</p>
+
+<div class="q-block" id="qb5">
+  <div class="q-num">問 6 <span class="badge br">要約</span></div>
+  <div class="q-stem">What lesson did the speaker learn from his company's history of transformation?</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(5,'A')">A. Companies should focus on one industry to maintain stability.</button>
+    <button class="opt" onclick="pick(5,'B')">B. Radical reinvention from one industry to another is possible and necessary.</button>
+    <button class="opt" onclick="pick(5,'C')">C. Family businesses should always prioritize tradition over innovation.</button>
+    <button class="opt" onclick="pick(5,'D')">D. Shareholders should have full control over major strategic decisions.</button>
+  </div>
+</div>
+<div class="q-block" id="qb6">
+  <div class="q-num">問 7 <span class="badge br">要約</span></div>
+  <div class="q-stem">Why did the CEO take up professional driving training at age 52?</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(6,'A')">A. He wanted to compete in professional racing as a hobby.</button>
+    <button class="opt" onclick="pick(6,'B')">B. He needed to understand how cars should drive to communicate effectively with engineers.</button>
+    <button class="opt" onclick="pick(6,'C')">C. Company regulations required all executives to obtain a racing license.</button>
+    <button class="opt" onclick="pick(6,'D')">D. He was preparing to launch a new line of racing vehicles.</button>
+  </div>
+</div>
+<div class="q-block" id="qb7">
+  <div class="q-num">問 8 <span class="badge br">要約</span></div>
+  <div class="q-stem">What does the speaker suggest is the greatest risk for talented and successful people?</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(7,'A')">A. Taking on too many risky investments early in their career.</button>
+    <button class="opt" onclick="pick(7,'B')">B. Spending too much time on education rather than practical experience.</button>
+    <button class="opt" onclick="pick(7,'C')">C. Ending up in a comfortable but unfulfilling career due to financial obligations.</button>
+    <button class="opt" onclick="pick(7,'D')">D. Failing to build a strong professional network in their field.</button>
+  </div>
+</div>
+
+
+<script>
+const answers=[{"correct": "C", "blank": 0, "word": "joy", "meaning": "喜び・楽しさ", "exp": "スピーカーは「自分のドーナツ（喜び）を見つけよ」と繰り返し述べている。"}, {"correct": "B", "blank": 1, "word": "instilled", "meaning": "植え付けた・身につけさせた", "exp": "「instill（植え付ける）」は教育・育成の文脈で頻出。removed（取り除いた）は逆。"}, {"correct": "C", "blank": 2, "word": "embracing", "meaning": "受け入れる・積極的に取り込む", "exp": "「embrace change（変化を受け入れる）」はビジネス英語の定番表現。"}, {"correct": "B", "blank": 3, "word": "never stop", "meaning": "〜をやめない・続ける", "exp": "「Never give up being a student」という発言の言い換え。生涯学習の姿勢。"}, {"correct": "C", "blank": 4, "word": "guiding light", "meaning": "導く光・羅針盤", "exp": "「north star, guiding light（北極星・導く光）」という原文表現の言い換え。"}, {"correct": "B", "blank": null, "word": null, "meaning": null, "exp": "織物機械メーカーから自動車メーカーへの転換を例に「劇的な変革を恐れるな」と訴えています。"}, {"correct": "B", "blank": null, "word": null, "meaning": null, "exp": "「エンジニアと車の走りについて対話するため」に高レベルの運転技術を習得したと述べています。"}, {"correct": "C", "blank": null, "word": null, "meaning": null, "exp": "「ゴールデン・ハンドカフ（高収入だが不本意な仕事）」の罠に陥るリスクを警告しています。"}];
+let score=0,answered={};
+function pick(idx,chosen){
+  if(answered[idx]!==undefined)return;
+  answered[idx]=true;
+  const a=answers[idx];
+  const isOk=chosen===a.correct;
+  if(isOk)score++;
+  const block=document.getElementById("qb"+idx);
+  block.querySelectorAll(".opt").forEach((b,i)=>{
+    b.disabled=true;
+    const letter=String.fromCharCode(65+i);
+    if(letter===a.correct)b.className="opt "+(letter===chosen?"ok":"reveal");
+    else if(letter===chosen)b.className="opt ng";
+  });
+  if(a.blank!==null){const bl=document.getElementById("bl-"+a.blank);if(bl)bl.className="blank "+(isOk?"ok":"ng");}
+  const fb=document.createElement("div");
+  fb.className="fb"+(isOk?"":" ng-fb");
+  const wordPart=a.word?"<span class='fb-word'>"+a.word+"</span>（"+a.meaning+"）　":"";
+  fb.innerHTML=(isOk?"✅":"❌")+" <span class='fb-ans'>正解：("+a.correct+")</span>　"+wordPart+a.exp;
+  block.appendChild(fb);
+  const total=answers.length,done=Object.keys(answered).length;
+  document.getElementById("score").textContent=score+" / "+total;
+  document.getElementById("pct").textContent=done===total?"完了！　正答率 "+Math.round(score/total*100)+"%":done+"/"+total+" 問回答済み";
+}
+</script>
+</body>
+</html>
