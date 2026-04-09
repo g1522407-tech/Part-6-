@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TOEIC Part 6 練習問題</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif;max-width:740px;margin:2rem auto;padding:0 1.5rem;color:#2c2c2a;background:#fff;line-height:1.7}
+h1{font-size:22px;font-weight:500;margin-bottom:4px}
+.meta{font-size:13px;color:#888780;margin-bottom:2rem}
+.score-bar{display:flex;align-items:center;gap:12px;background:#f8f7f4;border:1px solid #e8e7e3;border-radius:8px;padding:10px 1rem;margin-bottom:1.75rem;position:sticky;top:12px;z-index:10}
+.score-num{font-size:20px;font-weight:500;color:#2c2c2a}
+.score-label{font-size:13px;color:#888780}
+.pct{font-size:13px;color:#888780;margin-left:auto}
+.set-label{font-size:11px;font-weight:500;letter-spacing:.08em;color:#888780;text-transform:uppercase;margin-bottom:.6rem}
+.passage{background:#f8f7f4;border:1px solid #d3d1c7;border-radius:8px;padding:1rem 1.25rem;font-size:15px;line-height:2;margin-bottom:.75rem}
+.vocab-box{background:#fff;border:1px solid #e8e7e3;border-radius:8px;padding:.75rem 1rem;margin-bottom:1.25rem}
+.vocab-title{font-size:11px;font-weight:500;color:#888780;letter-spacing:.06em;text-transform:uppercase;margin-bottom:.5rem}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:4px 16px}
+.vocab-item{font-size:13px;color:#2c2c2a;line-height:1.7}
+.vocab-item strong{color:#185FA5;font-weight:500}
+.blank{display:inline-flex;align-items:center;justify-content:center;width:30px;height:22px;background:#fff;border:1px solid #b4b2a9;border-radius:5px;font-size:12px;font-weight:500;color:#5f5e5a;margin:0 3px;vertical-align:middle;transition:.15s}
+.blank.ok{background:#EAF3DE;border-color:#97C459;color:#3B6D11}
+.blank.ng{background:#FCEBEB;border-color:#F09595;color:#A32D2D}
+.q-block{border:1px solid #e8e7e3;border-radius:8px;padding:1rem 1.25rem;margin-bottom:10px}
+.q-meta{font-size:13px;font-weight:500;color:#888780;margin-bottom:8px}
+.badge{display:inline-block;font-size:11px;padding:2px 8px;border-radius:5px;margin-left:6px}
+.bw{background:#E6F1FB;color:#185FA5}.bs{background:#EEEDFE;color:#534AB7}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px}
+.opt{padding:8px 10px;text-align:left;background:#f8f7f4;border:1px solid #e8e7e3;border-radius:6px;font-size:13px;color:#2c2c2a;cursor:pointer;line-height:1.5;transition:.12s}
+.opt:hover:not(:disabled){background:#fff;border-color:#b4b2a9}
+.opt.ok{background:#EAF3DE;border-color:#97C459;color:#3B6D11;font-weight:500}
+.opt.ng{background:#FCEBEB;border-color:#F09595;color:#A32D2D}
+.opt.reveal{background:#E6F1FB;border-color:#85B7EB;color:#185FA5}
+.opt:disabled{cursor:default}
+.exp{font-size:12px;color:#5f5e5a;margin-top:8px;padding-top:8px;border-top:1px solid #e8e7e3;line-height:1.8}
+.exp-ans{font-weight:500;color:#3B6D11}
+hr{border:none;border-top:1px solid #e8e7e3;margin:1.75rem 0}
+</style>
+</head>
+<body>
+
+<h1>TOEIC Part 6 練習問題</h1>
+<p class="meta">Corporate Governance &amp; Japan Startup Ecosystem　|　730点レベル</p>
+
+<div class="score-bar">
+  <span class="score-label">スコア</span>
+  <span class="score-num" id="score">0 / 8</span>
+  <span class="pct" id="pct">0 / 8 問回答済み</span>
+</div>
+
+<!-- ===== SET 1 ===== -->
+<p class="set-label">Set 1 — Questions 1–4</p>
+
+<div class="passage" id="pb0">
+In high-profile white-collar criminal cases, defendants are sometimes granted bail while awaiting trial. However, if a defendant manages to <span class="blank" id="bl-0-1">1</span> the country before the legal proceedings are complete, it raises serious concerns about the integrity of the justice system. In such situations, public outrage is <span class="blank" id="bl-0-2">2</span>, as citizens feel the law has been undermined. Legal scholars argue that the two core issues — the act of escape itself and the need for judicial reform — must be addressed <span class="blank" id="bl-0-3">3</span>, since conflating them risks obscuring accountability. Proposed reforms include stricter bail <span class="blank" id="bl-0-4">4</span> and mandatory legal supervision during all prosecutor hearings.
+</div>
+
+<div class="vocab-box">
+  <div class="vocab-title">語注 Vocabulary</div>
+  <div class="vocab-grid">
+    <div class="vocab-item"><strong>defendant</strong>：被告人</div>
+    <div class="vocab-item"><strong>bail</strong>：保釈</div>
+    <div class="vocab-item"><strong>proceedings</strong>：訴訟手続き</div>
+    <div class="vocab-item"><strong>outrage</strong>：激しい怒り</div>
+    <div class="vocab-item"><strong>integrity</strong>：誠実さ・公正さ</div>
+    <div class="vocab-item"><strong>conflate</strong>：混同する</div>
+    <div class="vocab-item"><strong>accountability</strong>：説明責任</div>
+    <div class="vocab-item"><strong>mandatory</strong>：義務的な</div>
+  </div>
+</div>
+
+<div class="q-block" id="qb-0-1">
+  <div class="q-meta">問 1 <span class="badge bw">語彙</span></div>
+  <div class="opts">
+    <button class="opt" onclick="pick(0,1,'A')">A. enter</button>
+    <button class="opt" onclick="pick(0,1,'B')">B. flee</button>
+    <button class="opt" onclick="pick(0,1,'C')">C. defend</button>
+    <button class="opt" onclick="pick(0,1,'D')">D. govern</button>
+  </div>
+</div>
+
+<div class="q-block" id="qb-0-2">
+  <div class="q-meta">問 2 <span class="badge bw">語彙</span></div>
+  <div class="opts">
+    <button class="opt" onclick="pick(0,2,'A')">A. subdued</button>
+    <button class="opt" onclick="pick(0,2,'B')">B. misplaced</button>
+    <button class="opt" onclick="pick(0,2,'C')">C. inevitable</button>
+    <button class="opt" onclick="pick(0,2,'D')">D. complicated</button>
+  </div>
+</div>
+
+<div class="q-block" id="qb-0-3">
+  <div class="q-meta">問 3 <span class="badge bw">語彙</span></div>
+  <div class="opts">
+    <button class="opt" onclick="pick(0,3,'A')">A. simultaneously</button>
+    <button class="opt" onclick="pick(0,3,'B')">B. separately</button>
+    <button class="opt" onclick="pick(0,3,'C')">C. urgently</button>
+    <button class="opt" onclick="pick(0,3,'D')">D. informally</button>
+  </div>
+</div>
+
+<div class="q-block" id="qb-0-4">
+  <div class="q-meta">問 4 <span class="badge bs">文選択</span></div>
+  <div class="opts">
+    <button class="opt" onclick="pick(0,4,'A')">A. conditions</button>
+    <button class="opt" onclick="pick(0,4,'B')">B. negotiations</button>
+    <button class="opt" onclick="pick(0,4,'C')">C. allegations</button>
+    <button class="opt" onclick="pick(0,4,'D')">D. investments</button>
+  </div>
+</div>
+
+<hr>
+
+<!-- ===== SET 2 ===== -->
+<p class="set-label">Set 2 — Questions 5–8</p>
+
+<div class="passage" id="pb1">
+Over the past two decades, Japan's startup ecosystem has undergone a remarkable <span class="blank" id="bl-1-1">5</span>. Access to venture capital has improved significantly, and a new generation of entrepreneurs has emerged. Graduates from elite universities increasingly <span class="blank" id="bl-1-2">6</span> joining large corporations, opting instead to found their own companies or take on leadership roles at early-stage firms. <span class="blank" id="bl-1-3">7</span> Meanwhile, exits through IPOs have become more frequent, and the overall quality of deals has risen. Companies leveraging artificial intelligence have attracted particular attention, with investors citing their potential to <span class="blank" id="bl-1-4">8</span> traditional industries and establish Japan as a global innovation hub.
+</div>
+
+<div class="vocab-box">
+  <div class="vocab-title">語注 Vocabulary</div>
+  <div class="vocab-grid">
+    <div class="vocab-item"><strong>ecosystem</strong>：生態系・業界環境</div>
+    <div class="vocab-item"><strong>venture capital</strong>：ベンチャー投資</div>
+    <div class="vocab-item"><strong>entrepreneur</strong>：起業家</div>
+    <div class="vocab-item"><strong>elite</strong>：エリートの</div>
+    <div class="vocab-item"><strong>opt</strong>：選ぶ・選択する</div>
+    <div class="vocab-item"><strong>early-stage</strong>：創業初期の</div>
+    <div class="vocab-item"><strong>IPO</strong>：新規株式公開</div>
+    <div class="vocab-item"><strong>leverage</strong>：活用する</div>
+  </div>
+</div>
+
+<div class="q-block" id="qb-1-1">
+  <div class="q-meta">問 5 <span class="badge bw">語彙</span></div>
+  <div class="opts">
+    <button class="opt" onclick="pick(1,1,'A')">A. setback</button>
+    <button class="opt" onclick="pick(1,1,'B')">B. regulation</button>
+    <button class="opt" onclick="pick(1,1,'C')">C. transformation</button>
+    <button class="opt" onclick="pick(1,1,'D')">D. withdrawal</button>
+  </div>
+</div>
+
+<div class="q-block" id="qb-1-2">
+  <div class="q-meta">問 6 <span class="badge bw">語彙</span></div>
+  <div class="opts">
+    <button class="opt" onclick="pick(1,2,'A')">A. insist on</button>
+    <button class="opt" onclick="pick(1,2,'B')">B. refrain from</button>
+    <button class="opt" onclick="pick(1,2,'C')">C. take pride in</button>
+    <button class="opt" onclick="pick(1,2,'D')">D. look forward to</button>
+  </div>
+</div>
+
+<div class="q-block" id="qb-1-3">
+  <div class="q-meta">問 7 <span class="badge bs">文選択</span></div>
+  <div class="opts">
+    <button class="opt" onclick="pick(1,3,'A')">A. However, foreign investors remain cautious about the Japanese market.</button>
+    <button class="opt" onclick="pick(1,3,'B')">B. This shift in mindset is perhaps the most significant change of all.</button>
+    <button class="opt" onclick="pick(1,3,'C')">C. The government has imposed stricter regulations on new ventures.</button>
+    <button class="opt" onclick="pick(1,3,'D')">D. Most young people still prefer the security of government employment.</button>
+  </div>
+</div>
+
+<div class="q-block" id="qb-1-4">
+  <div class="q-meta">問 8 <span class="badge bw">語彙</span></div>
+  <div class="opts">
+    <button class="opt" onclick="pick(1,4,'A')">A. preserve</button>
+    <button class="opt" onclick="pick(1,4,'B')">B. disrupt</button>
+    <button class="opt" onclick="pick(1,4,'C')">C. imitate</button>
+    <button class="opt" onclick="pick(1,4,'D')">D. restrict</button>
+  </div>
+</div>
+
+<script>
+const answers = {
+  "0-1":{correct:"B",meaning:"flee：逃げる、逃亡する",exp:"保釈中に国外逃亡する文脈。flee（逃亡する）が正解。enter（入る）は逆の意味。"},
+  "0-2":{correct:"C",meaning:"inevitable：避けられない、必然的な",exp:"法が破られたと感じる市民の怒りは「必然的」。subdued（抑えられた）は逆。"},
+  "0-3":{correct:"B",meaning:"separately：別々に、区別して",exp:"2つの問題を混同しないよう「別々に」扱うべきという論旨。"},
+  "0-4":{correct:"A",meaning:"conditions：条件、状況",exp:"bail conditions（保釈条件）は法律文書の定番表現。allegations（申し立て）は文脈に合わない。"},
+  "1-1":{correct:"C",meaning:"transformation：変革、変容",exp:"過去20年の大きな変化を表す。setback（後退）やwithdrawal（撤退）は逆。"},
+  "1-2":{correct:"B",meaning:"refrain from：〜を控える、避ける",exp:"大企業への就職を「避ける」傾向。opt instead to... と続く流れに合う。"},
+  "1-3":{correct:"B",meaning:"—",exp:"前段（大企業離れ）を受けて「この意識の変化こそ最大の変化」とまとめる流れが自然。"},
+  "1-4":{correct:"B",meaning:"disrupt：〜を破壊的に変革する",exp:"AIスタートアップが既存産業を「破壊的に変革する」潜在力。disruption はスタートアップ文脈の定番語。"}
+};
+
+let score=0, answered={};
+
+function pick(si,qn,chosen){
+  const key=si+"-"+qn;
+  if(answered[key]) return;
+  answered[key]=true;
+  const {correct,meaning,exp}=answers[key];
+  const isOk=chosen===correct;
+  if(isOk) score++;
+
+  const block=document.getElementById("qb-"+si+"-"+qn);
+  block.querySelectorAll(".opt").forEach(b=>{
+    b.disabled=true;
+    const ch=b.textContent.charAt(0);
+    if(ch===correct) b.className="opt "+(ch===chosen?"ok":"reveal");
+    else if(ch===chosen) b.className="opt ng";
+  });
+
+  const e=document.createElement("div");
+  e.className="exp";
+  e.innerHTML="<span class='exp-ans'>正解 "+correct+"</span>　"+
+    (meaning&&meaning!=="—"?"<span style='color:#185FA5'>"+meaning+"</span>　":"")+exp;
+  block.appendChild(e);
+
+  const bl=document.getElementById("bl-"+si+"-"+qn);
+  if(bl) bl.className="blank "+(isOk?"ok":"ng");
+
+  const total=Object.keys(answers).length;
+  const done=Object.keys(answered).length;
+  document.getElementById("score").textContent=score+" / "+total;
+  document.getElementById("pct").textContent=
+    done===total
+      ? "完了！　正答率 "+Math.round(score/total*100)+"%"
+      : done+"/"+total+" 問回答済み";
+}
+</script>
+</body>
+</html>
