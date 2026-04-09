@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TOEIC Part 6 練習問題 No.03</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif;max-width:740px;margin:2rem auto;padding:0 1.5rem;color:#2c2c2a;background:#fff;line-height:1.7;font-size:15px}
+a.back{display:inline-block;font-size:13px;color:#185FA5;text-decoration:none;margin-bottom:1.5rem}
+h1{font-size:22px;font-weight:500;margin-bottom:4px}
+.subtitle{font-size:13px;color:#888780;margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid #e8e7e3}
+.score-bar{display:flex;align-items:center;gap:10px;background:#f8f7f4;border:1px solid #e8e7e3;border-radius:8px;padding:10px 1rem;margin-bottom:1.75rem;position:sticky;top:10px;z-index:10}
+.score-num{font-size:20px;font-weight:500;color:#2c2c2a}
+.score-lbl{font-size:13px;color:#888780}
+.pct{font-size:13px;color:#888780;margin-left:auto}
+.section-head{font-size:13px;font-weight:500;color:#fff;background:#444441;border-radius:6px;padding:5px 12px;display:inline-block;margin-bottom:1rem}
+.overview{background:#f0f4ff;border:1px solid #c5d4f5;border-radius:8px;padding:1rem 1.25rem;margin-bottom:1.5rem;font-size:14px;line-height:1.8}
+.overview strong{color:#185FA5}
+.passage{background:#f8f7f4;border:1px solid #d3d1c7;border-radius:8px;padding:1.1rem 1.25rem;font-size:15px;line-height:2.1;margin-bottom:.75rem}
+.vocab-box{background:#fff;border:1px solid #e8e7e3;border-radius:8px;padding:.8rem 1rem;margin-bottom:1.25rem}
+.vocab-title{font-size:11px;font-weight:500;color:#888780;letter-spacing:.07em;text-transform:uppercase;margin-bottom:.5rem}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:3px 16px}
+.vocab-item{font-size:13px;color:#2c2c2a;line-height:1.8}
+.vocab-item b{color:#185FA5;font-weight:500}
+.blank{display:inline-flex;align-items:center;justify-content:center;min-width:30px;height:22px;padding:0 6px;background:#fff;border:1px solid #b4b2a9;border-radius:5px;font-size:12px;font-weight:500;color:#5f5e5a;margin:0 3px;vertical-align:middle;transition:.15s}
+.blank.ok{background:#EAF3DE;border-color:#97C459;color:#3B6D11}
+.blank.ng{background:#FCEBEB;border-color:#F09595;color:#A32D2D}
+.q-block{border:1px solid #e8e7e3;border-radius:8px;padding:1rem 1.25rem;margin-bottom:10px}
+.q-num{font-size:13px;font-weight:500;color:#888780;margin-bottom:6px}
+.q-stem{font-size:14px;color:#2c2c2a;margin-bottom:10px;line-height:1.7;background:#f8f7f4;border-radius:6px;padding:8px 10px;border-left:3px solid #d3d1c7}
+.badge{display:inline-block;font-size:11px;padding:2px 8px;border-radius:5px;margin-left:6px}
+.bw{background:#E6F1FB;color:#185FA5}.bs{background:#EEEDFE;color:#534AB7}.br{background:#EAF3DE;color:#3B6D11}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.opt{padding:8px 10px;text-align:left;background:#f8f7f4;border:1px solid #e8e7e3;border-radius:6px;font-size:13px;color:#2c2c2a;cursor:pointer;line-height:1.5;transition:.12s;width:100%}
+.opt:hover:not(:disabled){background:#fff;border-color:#b4b2a9}
+.opt.ok{background:#EAF3DE;border-color:#97C459;color:#3B6D11;font-weight:500}
+.opt.ng{background:#FCEBEB;border-color:#F09595;color:#A32D2D}
+.opt.reveal{background:#E6F1FB;border-color:#85B7EB;color:#185FA5}
+.opt:disabled{cursor:default}
+.fb{font-size:13px;margin-top:10px;padding:10px 12px;border-radius:6px;background:#f0f9f0;border:1px solid #c0dd97;line-height:1.8}
+.fb.ng-fb{background:#fff5f5;border-color:#f09595}
+.fb-ans{font-weight:500;color:#3B6D11}
+.fb-word{color:#185FA5;font-weight:500}
+hr{border:none;border-top:1px solid #e8e7e3;margin:2rem 0}
+</style>
+</head>
+<body>
+<a class="back" href="index.html">← 問題一覧に戻る</a>
+<h1>🎮 TOEIC Part 6 練習問題 No.03</h1>
+<p class="subtitle">テーマ：ゲーム業界の投資戦略とIP活用　|　730点レベル　|　全8問</p>
+<div class="score-bar">
+  <span class="score-lbl">スコア</span>
+  <span class="score-num" id="score">0 / 8</span>
+  <span class="pct" id="pct">0 / 8 問回答済み</span>
+</div>
+<div class="overview">
+<strong>📌 パッセージ概要</strong>（このパッセージは架空のアナリストインタビューです。動画を見ずに解答できます）<br>
+証券アナリストがゲーム会社の業績見通しについてインタビューに答えています。主要ゲーム機のダウンサイクル、映画によるIP拡大効果、そして多角化戦略について語っています。
+</div>
+<p class="section-head">📝 Part A　穴埋め問題（問1〜5）</p>
+<div class="passage" id="pb0">
+A securities analyst recently <span class="blank" id="bl-0">1</span> a major video game console maker from "buy" to "neutral," citing concerns about a hardware down cycle that is progressing faster than initially expected. While a highly anticipated sequel title is expected to sell tens of millions of units, the company still faces the challenge of <span class="blank" id="bl-1">2</span> user engagement across its existing and aging platform. On a more positive note, a blockbuster animated film based on a popular game franchise has <span class="blank" id="bl-2">3</span> significant revenue, contributing approximately 10% of the company's annual operating profit. The analyst believes this film is valuable not only in the short term but also for its potential to <span class="blank" id="bl-3">4</span> the franchise's audience globally. Meanwhile, a diversified entertainment company that manages toy, game, and amusement businesses as an <span class="blank" id="bl-4">5</span> portfolio is highlighted as a top investment pick.
+</div>
+<div class="vocab-box">
+  <div class="vocab-title">📖 語注 Vocabulary</div>
+  <div class="vocab-grid">
+    <div class="vocab-item"><b>downgrade</b>：格下げする（投資評価）</div>
+    <div class="vocab-item"><b>down cycle</b>：下降局面</div>
+    <div class="vocab-item"><b>engagement</b>：エンゲージメント・利用継続</div>
+    <div class="vocab-item"><b>blockbuster</b>：大ヒット作品</div>
+    <div class="vocab-item"><b>franchise</b>：フランチャイズ・IP（知的財産）</div>
+    <div class="vocab-item"><b>operating profit</b>：営業利益</div>
+    <div class="vocab-item"><b>diversified</b>：多角化された</div>
+    <div class="vocab-item"><b>integrated</b>：統合された</div>
+  </div>
+</div>
+<div class="q-block" id="qb0">
+  <div class="q-num">問 1 <span class="badge bw">語彙</span></div>
+  <div class="q-stem">A securities analyst recently _______ a major video game console maker from "buy" to "neutral."</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(0,'A')">A. promoted</button>
+    <button class="opt" onclick="pick(0,'B')">B. downgraded</button>
+    <button class="opt" onclick="pick(0,'C')">C. acquired</button>
+    <button class="opt" onclick="pick(0,'D')">D. monitored</button>
+  </div>
+</div>
+<div class="q-block" id="qb1">
+  <div class="q-num">問 2 <span class="badge bw">語彙</span></div>
+  <div class="q-stem">...the company still faces the challenge of _______ user engagement across its existing and aging platform.</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(1,'A')">A. reducing</button>
+    <button class="opt" onclick="pick(1,'B')">B. ignoring</button>
+    <button class="opt" onclick="pick(1,'C')">C. sustaining</button>
+    <button class="opt" onclick="pick(1,'D')">D. outsourcing</button>
+  </div>
+</div>
+<div class="q-block" id="qb2">
+  <div class="q-num">問 3 <span class="badge bw">語彙</span></div>
+  <div class="q-stem">...a blockbuster animated film based on a popular game franchise has _______ significant revenue...</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(2,'A')">A. lost</button>
+    <button class="opt" onclick="pick(2,'B')">B. generated</button>
+    <button class="opt" onclick="pick(2,'C')">C. borrowed</button>
+    <button class="opt" onclick="pick(2,'D')">D. questioned</button>
+  </div>
+</div>
+<div class="q-block" id="qb3">
+  <div class="q-num">問 4 <span class="badge bw">語彙</span></div>
+  <div class="q-stem">...its potential to _______ the franchise's audience globally.</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(3,'A')">A. limit</button>
+    <button class="opt" onclick="pick(3,'B')">B. replace</button>
+    <button class="opt" onclick="pick(3,'C')">C. expand</button>
+    <button class="opt" onclick="pick(3,'D')">D. copy</button>
+  </div>
+</div>
+<div class="q-block" id="qb4">
+  <div class="q-num">問 5 <span class="badge bs">文選択</span></div>
+  <div class="q-stem">...a diversified entertainment company that manages toy, game, and amusement businesses as an _______ portfolio is highlighted as a top investment pick.</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(4,'A')">A. isolated</button>
+    <button class="opt" onclick="pick(4,'B')">B. integrated</button>
+    <button class="opt" onclick="pick(4,'C')">C. outdated</button>
+    <button class="opt" onclick="pick(4,'D')">D. optional</button>
+  </div>
+</div>
+<hr>
+<p class="section-head">📋 Part B　要約問題（問6〜8）</p>
+<div class="q-block" id="qb5">
+  <div class="q-num">問 6 <span class="badge br">要約</span></div>
+  <div class="q-stem">Why did the analyst downgrade the video game company to "neutral"?</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(5,'A')">A. The company announced plans to exit the console market entirely.</button>
+    <button class="opt" onclick="pick(5,'B')">B. A hardware down cycle is advancing faster than previously expected.</button>
+    <button class="opt" onclick="pick(5,'C')">C. The animated film performed poorly at the box office.</button>
+    <button class="opt" onclick="pick(5,'D')">D. The company lost its partnership with a major streaming platform.</button>
+  </div>
+</div>
+<div class="q-block" id="qb6">
+  <div class="q-num">問 7 <span class="badge br">要約</span></div>
+  <div class="q-stem">According to the passage, what is the long-term benefit of the animated film?</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(6,'A')">A. It will replace the company's core console business permanently.</button>
+    <button class="opt" onclick="pick(6,'B')">B. It reduces the need for future game development investment.</button>
+    <button class="opt" onclick="pick(6,'C')">C. It can expand the franchise's global audience and boost long-term console sales.</button>
+    <button class="opt" onclick="pick(6,'D')">D. It allows the company to enter the streaming video market.</button>
+  </div>
+</div>
+<div class="q-block" id="qb7">
+  <div class="q-num">問 8 <span class="badge br">要約</span></div>
+  <div class="q-stem">What makes the diversified entertainment company attractive as an investment according to the analyst?</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(7,'A')">A. It focuses exclusively on mobile gaming, which is growing rapidly.</button>
+    <button class="opt" onclick="pick(7,'B')">B. It manages toy, game, and amusement businesses as an integrated IP portfolio.</button>
+    <button class="opt" onclick="pick(7,'C')">C. It has recently acquired several overseas competitors at low prices.</button>
+    <button class="opt" onclick="pick(7,'D')">D. It is planning to list its shares on the US stock exchange.</button>
+  </div>
+</div>
+<script>
+const answers=[
+  {correct:"B",blank:0,word:"downgraded",meaning:"格下げした（投資評価を下げた）",exp:"「buyからneutralに格下げした」という投資用語の定番表現。promoted（昇格）は逆。"},
+  {correct:"C",blank:1,word:"sustaining",meaning:"維持する・持続させる",exp:"既存プラットフォームでのユーザーエンゲージメントを「維持する」課題。reducing（減らす）は逆。"},
+  {correct:"B",blank:2,word:"generated",meaning:"生み出した・創出した",exp:"「generate revenue（収益を生み出す）」はビジネス英語の頻出表現。"},
+  {correct:"C",blank:3,word:"expand",meaning:"拡大する・広げる",exp:"映画がフランチャイズの「視聴者層を世界的に拡大する」可能性を述べている。"},
+  {correct:"B",blank:4,word:"integrated",meaning:"統合された・一体化した",exp:"玩具・ゲーム・アミューズメントを「統合されたIPポートフォリオ」として運営する強みを指す。"},
+  {correct:"B",blank:null,word:null,meaning:null,exp:"ダウンサイクルが「当初の予測より速く深く進んでいる」ためneutralに格下げ。"},
+  {correct:"C",blank:null,word:null,meaning:null,exp:"映画はIPの「人口を拡大」し、長期的なコンソールゲームの市場拡大に貢献すると述べています。"},
+  {correct:"B",blank:null,word:null,meaning:null,exp:"玩具・ゲーム・アミューズメントを統合IPポートフォリオとして展開する多角化戦略が評価されています。"}
+];
+let score=0,answered={};
+function pick(idx,chosen){
+  if(answered[idx]!==undefined)return;
+  answered[idx]=true;
+  const a=answers[idx];
+  const isOk=chosen===a.correct;
+  if(isOk)score++;
+  const block=document.getElementById("qb"+idx);
+  block.querySelectorAll(".opt").forEach((b,i)=>{
+    b.disabled=true;
+    const letter=String.fromCharCode(65+i);
+    if(letter===a.correct)b.className="opt "+(letter===chosen?"ok":"reveal");
+    else if(letter===chosen)b.className="opt ng";
+  });
+  if(a.blank!==null){const bl=document.getElementById("bl-"+a.blank);if(bl)bl.className="blank "+(isOk?"ok":"ng");}
+  const fb=document.createElement("div");
+  fb.className="fb"+(isOk?"":" ng-fb");
+  const wordPart=a.word?"<span class='fb-word'>"+a.word+"</span>（"+a.meaning+"）　":"";
+  fb.innerHTML=(isOk?"✅":"❌")+" <span class='fb-ans'>正解：("+a.correct+")</span>　"+wordPart+a.exp;
+  block.appendChild(fb);
+  const total=answers.length,done=Object.keys(answered).length;
+  document.getElementById("score").textContent=score+" / "+total;
+  document.getElementById("pct").textContent=done===total?"完了！　正答率 "+Math.round(score/total*100)+"%":done+"/"+total+" 問回答済み";
+}
+</script>
+</body>
+</html>
