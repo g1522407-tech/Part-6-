@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TOEIC Part 6 練習問題 No.04</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans",sans-serif;max-width:740px;margin:2rem auto;padding:0 1.5rem;color:#2c2c2a;background:#fff;line-height:1.7;font-size:15px}
+a.back{display:inline-block;font-size:13px;color:#185FA5;text-decoration:none;margin-bottom:1.5rem}
+h1{font-size:22px;font-weight:500;margin-bottom:4px}
+.subtitle{font-size:13px;color:#888780;margin-bottom:1.25rem;padding-bottom:1rem;border-bottom:1px solid #e8e7e3}
+.yt-link{display:flex;align-items:center;gap:10px;background:#fff8f8;border:1px solid #fbc8c8;border-radius:8px;padding:.75rem 1rem;margin-bottom:1.5rem;text-decoration:none;color:#2c2c2a;transition:.12s}
+.yt-link:hover{background:#fff0f0;border-color:#f09595}
+.yt-icon{width:32px;height:32px;background:#E24B4A;border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.yt-icon svg{width:16px;height:16px;fill:#fff}
+.yt-text{font-size:13px}
+.yt-text strong{display:block;font-size:14px;font-weight:500;color:#2c2c2a;margin-bottom:2px}
+.yt-text span{color:#888780}
+.score-bar{display:flex;align-items:center;gap:10px;background:#f8f7f4;border:1px solid #e8e7e3;border-radius:8px;padding:10px 1rem;margin-bottom:1.75rem;position:sticky;top:10px;z-index:10}
+.score-num{font-size:20px;font-weight:500;color:#2c2c2a}
+.score-lbl{font-size:13px;color:#888780}
+.pct{font-size:13px;color:#888780;margin-left:auto}
+.section-head{font-size:13px;font-weight:500;color:#fff;background:#444441;border-radius:6px;padding:5px 12px;display:inline-block;margin-bottom:1rem}
+.overview{background:#f0f4ff;border:1px solid #c5d4f5;border-radius:8px;padding:1rem 1.25rem;margin-bottom:1.5rem;font-size:14px;line-height:1.8}
+.overview strong{color:#185FA5}
+.passage{background:#f8f7f4;border:1px solid #d3d1c7;border-radius:8px;padding:1.1rem 1.25rem;font-size:15px;line-height:2.1;margin-bottom:.75rem}
+.vocab-box{background:#fff;border:1px solid #e8e7e3;border-radius:8px;padding:.8rem 1rem;margin-bottom:1.25rem}
+.vocab-title{font-size:11px;font-weight:500;color:#888780;letter-spacing:.07em;text-transform:uppercase;margin-bottom:.5rem}
+.vocab-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:3px 16px}
+.vocab-item{font-size:13px;color:#2c2c2a;line-height:1.8}
+.vocab-item b{color:#185FA5;font-weight:500}
+.blank{display:inline-flex;align-items:center;justify-content:center;min-width:30px;height:22px;padding:0 6px;background:#fff;border:1px solid #b4b2a9;border-radius:5px;font-size:12px;font-weight:500;color:#5f5e5a;margin:0 3px;vertical-align:middle;transition:.15s}
+.blank.ok{background:#EAF3DE;border-color:#97C459;color:#3B6D11}
+.blank.ng{background:#FCEBEB;border-color:#F09595;color:#A32D2D}
+.q-block{border:1px solid #e8e7e3;border-radius:8px;padding:1rem 1.25rem;margin-bottom:10px}
+.q-num{font-size:13px;font-weight:500;color:#888780;margin-bottom:6px}
+.q-stem{font-size:14px;color:#2c2c2a;margin-bottom:10px;line-height:1.7;background:#f8f7f4;border-radius:6px;padding:8px 10px;border-left:3px solid #d3d1c7}
+.badge{display:inline-block;font-size:11px;padding:2px 8px;border-radius:5px;margin-left:6px}
+.bw{background:#E6F1FB;color:#185FA5}.bs{background:#EEEDFE;color:#534AB7}.br{background:#EAF3DE;color:#3B6D11}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.opt{padding:8px 10px;text-align:left;background:#f8f7f4;border:1px solid #e8e7e3;border-radius:6px;font-size:13px;color:#2c2c2a;cursor:pointer;line-height:1.5;transition:.12s;width:100%}
+.opt:hover:not(:disabled){background:#fff;border-color:#b4b2a9}
+.opt.ok{background:#EAF3DE;border-color:#97C459;color:#3B6D11;font-weight:500}
+.opt.ng{background:#FCEBEB;border-color:#F09595;color:#A32D2D}
+.opt.reveal{background:#E6F1FB;border-color:#85B7EB;color:#185FA5}
+.opt:disabled{cursor:default}
+.fb{font-size:13px;margin-top:10px;padding:10px 12px;border-radius:6px;background:#f0f9f0;border:1px solid #c0dd97;line-height:1.8}
+.fb.ng-fb{background:#fff5f5;border-color:#f09595}
+.fb-ans{font-weight:500;color:#3B6D11}
+.fb-word{color:#185FA5;font-weight:500}
+hr{border:none;border-top:1px solid #e8e7e3;margin:2rem 0}
+</style>
+</head>
+<body>
+<a class="back" href="index.html">← 問題一覧に戻る</a>
+<h1>💻 TOEIC Part 6 練習問題 No.04</h1>
+<p class="subtitle">テーマ：AIと日本への大型投資戦略　|　730点レベル　|　全8問</p>
+
+<a class="yt-link" href="https://www.youtube.com/watch?v=L9R2ivKeZtI" target="_blank">
+  <div class="yt-icon">
+    <svg viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+  </div>
+  <div class="yt-text">
+    <strong>元動画を見る（任意）</strong>
+    <span>Microsoft Japan — $2.9 Billion Investment &amp; AI Strategy Interview</span>
+  </div>
+</a>
+
+<div class="score-bar">
+  <span class="score-lbl">スコア</span>
+  <span class="score-num" id="score">0 / 8</span>
+  <span class="pct" id="pct">0 / 8 問回答済み</span>
+</div>
+
+<div class="overview">
+<strong>📌 パッセージ概要</strong>（動画を見なくても解答できます）<br>
+グローバルテクノロジー企業の日本法人代表が、大規模投資計画、AI活用、サイバーセキュリティ、そして人材育成について語っています。
+</div>
+
+<p class="section-head">📝 Part A　穴埋め問題（問1〜5）</p>
+
+<div class="passage" id="pb0">
+A major technology company recently announced a multi-billion dollar <span class="blank" id="bl-0">1</span> in Japan, covering four key areas: data center expansion, workforce reskilling, a new research center, and cybersecurity. The company is particularly <span class="blank" id="bl-1">2</span> to increasing the number of women in technology and engineering fields. A dedicated research center will focus on challenges unique to Japan, such as its rapidly aging population, using artificial intelligence to <span class="blank" id="bl-2">3</span> quality of life for elderly citizens. The executive emphasized that AI cannot be deployed without robust security measures, stressing that cybersecurity must be <span class="blank" id="bl-3">4</span> before AI adoption can proceed. On the economic front, generative AI is expected to <span class="blank" id="bl-4">5</span> Japan's GDP by approximately six percentage points, representing one of the most significant growth drivers in the current economy.
+</div>
+
+<div class="vocab-box">
+  <div class="vocab-title">📖 語注 Vocabulary</div>
+  <div class="vocab-grid">
+    <div class="vocab-item"><b>reskilling</b>：再教育・スキル転換</div>
+    <div class="vocab-item"><b>dedicated</b>：専用の・特化した</div>
+    <div class="vocab-item"><b>aging population</b>：高齢化社会</div>
+    <div class="vocab-item"><b>robust</b>：強固な・堅牢な</div>
+    <div class="vocab-item"><b>cybersecurity</b>：サイバーセキュリティ</div>
+    <div class="vocab-item"><b>generative AI</b>：生成AI</div>
+    <div class="vocab-item"><b>GDP</b>：国内総生産</div>
+    <div class="vocab-item"><b>deployment</b>：導入・展開</div>
+  </div>
+</div>
+
+<div class="q-block" id="qb0">
+  <div class="q-num">問 1 <span class="badge bw">語彙</span></div>
+  <div class="q-stem">A major technology company recently announced a multi-billion dollar _______ in Japan...</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(0,'A')">A. withdrawal</button>
+    <button class="opt" onclick="pick(0,'B')">B. investment</button>
+    <button class="opt" onclick="pick(0,'C')">C. merger</button>
+    <button class="opt" onclick="pick(0,'D')">D. inspection</button>
+  </div>
+</div>
+
+<div class="q-block" id="qb1">
+  <div class="q-num">問 2 <span class="badge bw">語彙</span></div>
+  <div class="q-stem">The company is particularly _______ to increasing the number of women in technology and engineering fields.</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(1,'A')">A. opposed</button>
+    <button class="opt" onclick="pick(1,'B')">B. indifferent</button>
+    <button class="opt" onclick="pick(1,'C')">C. committed</button>
+    <button class="opt" onclick="pick(1,'D')">D. restricted</button>
+  </div>
+</div>
+
+<div class="q-block" id="qb2">
+  <div class="q-num">問 3 <span class="badge bw">語彙</span></div>
+  <div class="q-stem">...using artificial intelligence to _______ quality of life for elderly citizens.</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(2,'A')">A. reduce</button>
+    <button class="opt" onclick="pick(2,'B')">B. ignore</button>
+    <button class="opt" onclick="pick(2,'C')">C. complicate</button>
+    <button class="opt" onclick="pick(2,'D')">D. enhance</button>
+  </div>
+</div>
+
+<div class="q-block" id="qb3">
+  <div class="q-num">問 4 <span class="badge bw">語彙</span></div>
+  <div class="q-stem">...cybersecurity must be _______ before AI adoption can proceed.</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(3,'A')">A. eliminated</button>
+    <button class="opt" onclick="pick(3,'B')">B. prioritized</button>
+    <button class="opt" onclick="pick(3,'C')">C. outsourced</button>
+    <button class="opt" onclick="pick(3,'D')">D. simplified</button>
+  </div>
+</div>
+
+<div class="q-block" id="qb4">
+  <div class="q-num">問 5 <span class="badge bs">文選択</span></div>
+  <div class="q-stem">On the economic front, generative AI is expected to _______ Japan's GDP by approximately six percentage points...</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(4,'A')">A. decrease</button>
+    <button class="opt" onclick="pick(4,'B')">B. stabilize</button>
+    <button class="opt" onclick="pick(4,'C')">C. boost</button>
+    <button class="opt" onclick="pick(4,'D')">D. replace</button>
+  </div>
+</div>
+
+<hr>
+
+<p class="section-head">📋 Part B　要約問題（問6〜8）</p>
+
+<div class="q-block" id="qb5">
+  <div class="q-num">問 6 <span class="badge br">要約</span></div>
+  <div class="q-stem">According to the passage, what is one focus of the new research center?</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(5,'A')">A. Developing new gaming technologies for younger generations.</button>
+    <button class="opt" onclick="pick(5,'B')">B. Using AI to address Japan's aging population challenge.</button>
+    <button class="opt" onclick="pick(5,'C')">C. Building faster internet infrastructure across rural Japan.</button>
+    <button class="opt" onclick="pick(5,'D')">D. Training engineers to work overseas in global tech firms.</button>
+  </div>
+</div>
+
+<div class="q-block" id="qb6">
+  <div class="q-num">問 7 <span class="badge br">要約</span></div>
+  <div class="q-stem">What does the executive suggest about the relationship between AI and cybersecurity?</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(6,'A')">A. AI makes cybersecurity measures unnecessary in modern systems.</button>
+    <button class="opt" onclick="pick(6,'B')">B. Cybersecurity should be handled separately from AI development.</button>
+    <button class="opt" onclick="pick(6,'C')">C. Strong cybersecurity must come before AI can be responsibly deployed.</button>
+    <button class="opt" onclick="pick(6,'D')">D. The government alone is responsible for ensuring AI security.</button>
+  </div>
+</div>
+
+<div class="q-block" id="qb7">
+  <div class="q-num">問 8 <span class="badge br">要約</span></div>
+  <div class="q-stem">Which of the following BEST summarizes the company's overall strategy in Japan?</div>
+  <div class="opts">
+    <button class="opt" onclick="pick(7,'A')">A. Focus solely on data center construction to support cloud computing.</button>
+    <button class="opt" onclick="pick(7,'B')">B. A four-part plan covering infrastructure, workforce development, research, and security.</button>
+    <button class="opt" onclick="pick(7,'C')">C. Partner exclusively with the Japanese government to regulate AI usage.</button>
+    <button class="opt" onclick="pick(7,'D')">D. Reduce investment risk by limiting operations to urban areas of Japan.</button>
+  </div>
+</div>
+
+<script>
+const answers=[
+  {correct:"B",blank:0,word:"investment",meaning:"投資",exp:"数十億ドル規模の「投資」を発表したという文脈。withdrawal（撤退）は逆。"},
+  {correct:"C",blank:1,word:"committed",meaning:"〜に取り組んでいる・専念している",exp:"「be committed to〜（〜に専念する）」はビジネス英語の必須表現。opposed（反対）は逆。"},
+  {correct:"D",blank:2,word:"enhance",meaning:"向上させる・高める",exp:"「enhance quality of life（生活の質を向上させる）」は定番表現。reduce（下げる）は逆。"},
+  {correct:"B",blank:3,word:"prioritized",meaning:"優先される",exp:"「セキュリティを最優先にしてからAIを使う」という主張。security security securityという表現が示す通り。"},
+  {correct:"C",blank:4,word:"boost",meaning:"押し上げる・促進する",exp:"「GDPを6ポイント押し上げる」という経済成長の文脈。decrease（下げる）は逆。"},
+  {correct:"B",blank:null,word:null,meaning:null,exp:"「日本固有の課題＝高齢化」にAIで取り組むと明示されています。"},
+  {correct:"C",blank:null,word:null,meaning:null,exp:"「security, security, security, then you get to use AI」という発言が核心。セキュリティが先という立場。"},
+  {correct:"B",blank:null,word:null,meaning:null,exp:"データセンター・人材育成・研究センター・サイバーセキュリティの4本柱が戦略の全体像です。"}
+];
+let score=0,answered={};
+function pick(idx,chosen){
+  if(answered[idx]!==undefined)return;
+  answered[idx]=true;
+  const a=answers[idx];
+  const isOk=chosen===a.correct;
+  if(isOk)score++;
+  const block=document.getElementById("qb"+idx);
+  block.querySelectorAll(".opt").forEach((b,i)=>{
+    b.disabled=true;
+    const letter=String.fromCharCode(65+i);
+    if(letter===a.correct)b.className="opt "+(letter===chosen?"ok":"reveal");
+    else if(letter===chosen)b.className="opt ng";
+  });
+  if(a.blank!==null){const bl=document.getElementById("bl-"+a.blank);if(bl)bl.className="blank "+(isOk?"ok":"ng");}
+  const fb=document.createElement("div");
+  fb.className="fb"+(isOk?"":" ng-fb");
+  const wordPart=a.word?"<span class='fb-word'>"+a.word+"</span>（"+a.meaning+"）　":"";
+  fb.innerHTML=(isOk?"✅":"❌")+" <span class='fb-ans'>正解：("+a.correct+")</span>　"+wordPart+a.exp;
+  block.appendChild(fb);
+  const total=answers.length,done=Object.keys(answered).length;
+  document.getElementById("score").textContent=score+" / "+total;
+  document.getElementById("pct").textContent=done===total?"完了！　正答率 "+Math.round(score/total*100)+"%":done+"/"+total+" 問回答済み";
+}
+</script>
+</body>
+</html>
